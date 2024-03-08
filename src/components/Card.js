@@ -10,9 +10,7 @@ const Card = ({ title, description, onClick, key }) => {
                     <p class="card-text">
                         {description.lengt < 100 ? description : description.substr(0, 100) + '...'}
                     </p>
-                    <div onClick={onClick} class="btn btn-primary">Request
-                    {
-console.log('click')}</div>
+                    <div onClick={onClick} class="btn btn-primary">Request</div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FormPermissionRequest = ({permissionType}) => {
+const FormPermissionRequest = ({permissionType, setPermissionPage}) => {
     return (
         <div className='form-request'>
             <h1 for="inputEmail4" class="form-label">{permissionType}</h1>
@@ -56,7 +56,7 @@ const FormPermissionRequest = ({permissionType}) => {
                     </div>
                 </div>
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Request</button>
+                    <button type="submit" class="btn btn-primary" onClick={setPermissionPage}>Request</button>
                 </div>
             </form>
         </div>
