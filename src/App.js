@@ -3,7 +3,8 @@ import { MainPage, NavBar, PermissionPage, getMunicipalityData } from './compone
 
 const App = () => {
   const [showPermissionPage, setShowPermissionPage] = useState(true);
-  const [municipalityData, setMunicipalityData] = useState(null)
+  const [municipalityData, setMunicipalityData] = useState(null);
+  const [permissionIndex, setPermissionIndex] = useState(0);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -17,8 +18,13 @@ const App = () => {
     <div className='main'>
       <NavBar setShowPermissionPage={() => setShowPermissionPage(true)} />
       <section>
-        {showPermissionPage && <MainPage setPermissionPage={() => setShowPermissionPage(false)} />}
-        {!showPermissionPage && <PermissionPage key={0} />}
+        {showPermissionPage && <MainPage
+          setPermissionPage={setShowPermissionPage}
+          setPermissionIndex={setPermissionIndex}
+        />}
+        {!showPermissionPage && <PermissionPage
+          permissionIndex={permissionIndex}
+        />}
       </section>
       <footer>
         <section className='about' id='about'>

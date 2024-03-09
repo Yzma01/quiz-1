@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Card, getMunicipalityData } from './components'
 
-const MainPage = ({ setPermissionPage }) => {
+const MainPage = ({ setPermissionPage, setPermissionIndex }) => {
     const [municipalityData, setMunicipalityData] = useState(null)
 
     useEffect(() => {
@@ -11,6 +11,11 @@ const MainPage = ({ setPermissionPage }) => {
         }
         fetchData();
     }, [])
+
+    function handleClick(key) {
+        setPermissionIndex(key)
+        setPermissionPage(false)
+    }
     return (
         <div>
             <section className='info'>
@@ -22,16 +27,18 @@ const MainPage = ({ setPermissionPage }) => {
             </section>
 
             <section className='permissions' id='permissions'>
-                {municipalityData ? (
-                    municipalityData.municipality.permits ? (
-                        municipalityData.municipality.permits.map(({ title, description }, index) => (
-                            <Card title={title} description={description} key={index} onClick={setPermissionPage} />
-                        ))
-                    ) : (
-                        <p>No hay permisos disponibles.</p>
+                {municipalityData?.municipality?.permits?.map(({ title, description }, key) => {
+                    return(
+                        <Card
+                            title={title}
+                            description={description}
+                            index={key}
+                            onClick={() => handleClick(key)}
+                            key={key}
+                        />
                     )
-                ) : (
-                    <p>Cargando permisos...</p>
+                    key = key +1;
+                }
                 )}
             </section>
         </div>
