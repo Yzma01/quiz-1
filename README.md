@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+#QUIZ #1 Progra VI
+author: Ismael Marchena Méndez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Descripción:
+En esta tarea, se espera que un equipo de dos desarrolladores web cree un sitio web para la Municipalidad de San Francisco utilizando Bootstrap, HTML y CSS. Aquí hay una descripción detallada de los pasos a seguir:
+Desarrollo del Sitio Web:
 
-## Available Scripts
+Crea tres páginas: una de inicio, una de explicación detallada y un formulario web.
+En la página de inicio, presenta una descripción general del servicio municipal con un llamado a la acción para descargar un formulario o acceder a la documentación oficial.
+Utiliza el sistema de layout de Bootstrap para garantizar la responsividad del diseño en diferentes dispositivos.
+Página de Explicación:
 
-In the project directory, you can run:
+Diseña una página detallada que explique el proceso del servicio ofrecido.
+Divide la página en secciones con títulos descriptivos.
+Utiliza imágenes, videos y componentes de Bootstrap para mejorar el contenido.
+Formulario Web:
 
-### `npm start`
+Crea un formulario web para completar un permiso de construcción u otro formulario relacionado.
+Utiliza componentes de formularios de Bootstrap y añade validación, ya sea con Bootstrap o JavaScript.
+Personalización del Tema:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Personaliza el tema del sitio web utilizando las herramientas proporcionadas por Bootstrap.
+Experimenta con ajustes de color, tipografía y otros estilos para adaptar el diseño a las necesidades del proyecto.
+Implementación de Funcionalidades Adicionales:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Agrega funcionalidades adicionales con JavaScript para mejorar la experiencia del usuario, como validación en tiempo real y animaciones al enviar el formulario.
+Pruebas y Revisión:
 
-### `npm test`
+Realiza pruebas exhaustivas en diferentes dispositivos y tamaños de pantalla.
+Revisa el código para garantizar una estructura adecuada.
+Entrega:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Publica el sitio web en Netlify.
+Entrega el proyecto a través del repositorio en GitHub antes de la fecha límite.
+Incluye un archivo README.md con instrucciones detalladas para acceder al sitio web.
+Evaluación:
 
-### `npm run build`
+El proyecto se evaluará en función del cumplimiento de especificaciones, el uso efectivo de Bootstrap, la creatividad en el diseño, la funcionalidad y usabilidad del sitio, la calidad del código, y la adecuada publicación en GitHub y Netlify.
+Automatización:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#NELIFY LINK: 
+https://mupsf.netlify.app
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
