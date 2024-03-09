@@ -20,6 +20,7 @@ const NavBar = ({setShowPermissionPage}) => {
                         <a
                             class="nav-link"
                             href="#permissions"
+                            onClick={setShowPermissionPage}
                         >
                             Permissions
                         </a>
@@ -28,6 +29,7 @@ const NavBar = ({setShowPermissionPage}) => {
                         <a
                             class="nav-link"
                             href="#about"
+                            onClick={setShowPermissionPage}
                         >
                             About
                         </a>
@@ -36,6 +38,7 @@ const NavBar = ({setShowPermissionPage}) => {
                         <a
                             class="nav-link"
                             href='#contact'
+                            onClick={setShowPermissionPage}
                         >
                             Contact
                         </a>
