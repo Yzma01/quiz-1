@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NavBar = ({setShowPermissionPage}) => {
+const NavBar = ({ setShowPermissionPage }) => {
     return (
         <div>
             <header className='header'>

@@ -1,10 +1,12 @@
 import React from 'react'
-import FormPermissionRequest from './FormPermissionRequest'
+import { FormPermissionRequest } from './components'
 
-const PermissionPage = ({permissionType, setPermissionPage}) => {
+const PermissionPage = ({ permissionType, setPermissionPage, key }) => {
   return (
     <div>
-      <FormPermissionRequest permissionType={permissionType} setPermissionPage={setPermissionPage}/>
+      <section>
+      </section>
+      <FormPermissionRequest permissionType={permissionType} setPermissionPage={setPermissionPage} />
     </div>
   )
 }

@@ -1,6 +1,16 @@
-import React from 'react'
-import { Card, permissions } from './components'
-const MainPage = ({setPermissionPage}) => {
+import React, { useEffect, useState } from 'react'
+import { Card, getMunicipalityData } from './components'
+
+const MainPage = ({ setPermissionPage }) => {
+    const [municipalityData, setMunicipalityData] = useState(null)
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await getMunicipalityData();
+            setMunicipalityData(data[0])
+        }
+        fetchData();
+    }, [])
     return (
         <div>
             <section className='info'>
@@ -12,9 +22,17 @@ const MainPage = ({setPermissionPage}) => {
             </section>
 
             <section className='permissions' id='permissions'>
-                {permissions.map(({ title, description, key }) => (
-                    <Card title={title} description={description} key={key} onClick={setPermissionPage}/>
-                ))}
+                {municipalityData ? (
+                    municipalityData.municipality.permits ? (
+                        municipalityData.municipality.permits.map(({ title, description }, index) => (
+                            <Card title={title} description={description} key={index} onClick={setPermissionPage} />
+                        ))
+                    ) : (
+                        <p>No hay permisos disponibles.</p>
+                    )
+                ) : (
+                    <p>Cargando permisos...</p>
+                )}
             </section>
         </div>
     )

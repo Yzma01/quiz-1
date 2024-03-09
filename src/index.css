@@ -30,15 +30,15 @@
 .info p {
   width: 500px;
 }
-.permissions{
+.permissions {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 20px;
-  padding: 20px;
+  padding: 0px 20%;
   align-items: center;
   justify-content: center;
 }
-.form-request{
+.form-request {
   display: flex;
   flex-direction: column;
   width: 80vw;
@@ -48,4 +48,54 @@
   text-align: center;
   margin: 10%;
   padding: 20px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: .2%;
+  padding: 20px;
+}
+.about .mision-vision{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid var(--bgColor);
+  padding: 30px;
+  margin: 20px;
+  gap: 2%;
+}
+.about .mision-vision h5{
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(500%);
+  transform: translateY(-30%);
+  align-items: center;
+  text-decoration: underline;
+}
+.values{
+  border: 2px solid var(--bgColor);
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  margin: 20px;
+  padding: 0px 10%;
+}
+.values p{
+  padding: 0px 2%;
+  text-align: center;
+}
+.contact{
+  background-color: var(--bgColor);
+  display: flex;
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+
 }
