@@ -24,6 +24,7 @@ const App = () => {
         />}
         {!showPermissionPage && <PermissionPage
           permissionIndex={permissionIndex}
+          setPermissionPage={() => setShowPermissionPage(true)}
         />}
       </section>
       <footer>

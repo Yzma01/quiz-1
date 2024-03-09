@@ -14,11 +14,14 @@ const PermissionPage = ({ permissionType, setPermissionPage, permissionIndex }) 
   }, [])
   return (
     <div>
-      <section>
+      <section className='permission-header'>
         <h1>
-          {permissionIndex}
           {municipalityData?.municipality?.permits[permissionIndex].title}
         </h1>
+        <p>
+          {municipalityData?.municipality?.permits[permissionIndex]?.description}
+          {municipalityData?.municipality?.permits[permissionIndex]?.detailDescription}
+        </p>
 
       </section>
       <FormPermissionRequest permissionType={permissionType} setPermissionPage={setPermissionPage} />

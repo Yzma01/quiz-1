@@ -4,8 +4,6 @@ import '../index.css'
 const Card = ({ title, description, onClick, index }) => {
     return (
         <div className='permisision-card'>
-
-            {index}
             <div class="card" style={{ width: 18 + 'rem' }}>
                 <div class="card-body">
                     <h5 class="card-title">{title}</h5>

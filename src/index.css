@@ -38,16 +38,53 @@
   align-items: center;
   justify-content: center;
 }
+.permission-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media (max-width:840px) {
+  .permissions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px;
+    padding: 0px 20%;
+    align-items: center;
+    justify-content: center;
+  }
+  .header, .header .title {
+    font-size: .9em;
+  }
+}
+@media (max-width:540px) {
+  .permissions {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px;
+    padding: 0px 20%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 .form-request {
   display: flex;
   flex-direction: column;
   width: 80vw;
-  height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10%;
+  margin: 5% 10%;
   padding: 20px;
+}
+.form-check{
+  display: flex;
+  justify-content: center;
 }
 .about {
   display: flex;
@@ -56,6 +93,9 @@
   align-items: center;
   margin: 0.2%;
   padding: 20px;
+}
+.about p{
+  text-align: center;
 }
 .about .mision-vision {
   display: flex;
