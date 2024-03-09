@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FormPermissionRequest = ({permissionType, setPermissionPage}) => {
+const FormPermissionRequest = ({ permissionType, setPermissionPage }) => {
     return (
         <div className='form-request'>
             <h1 for="inputEmail4" class="form-label">{permissionType}</h1>
@@ -21,8 +21,8 @@ const FormPermissionRequest = ({permissionType, setPermissionPage}) => {
                 </div>
                 <div class="col-md-6">
                     <label for="inputPassword4" class="form-label">Phone Number</label>
-                    <input type="number" class="form-control" id="phoneNumber" 
-                    placeholder='Phone Number'/>
+                    <input type="number" class="form-control" id="phoneNumber"
+                        placeholder='Phone Number' />
                 </div>
                 <div class="col-12">
                     <label for="inputAddress" class="form-label">Address</label>
@@ -39,8 +39,11 @@ const FormPermissionRequest = ({permissionType, setPermissionPage}) => {
                 <div class="col-md-4">
                     <label for="inputState" class="form-label">State</label>
                     <select id="inputState" class="form-select">
-                        <option selected>Choose...</option>
-                        <option>...</option>
+                        <option selected>San Francisco City</option>
+                        <option>Prosperityville</option>
+                        <option>Harmony Township</option>
+                        <option>Progressburg</option>
+                        <option>Unity Springs</option>
                     </select>
                 </div>
                 <div class="col-md-2">
@@ -51,7 +54,7 @@ const FormPermissionRequest = ({permissionType, setPermissionPage}) => {
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck" />
                         <label class="form-check-label" for="gridCheck">
-                            Accetp all terms and conditions
+                            Accept All Terms and Conditions
                         </label>
                     </div>
                 </div>
