@@ -28,16 +28,19 @@ const MainPage = ({ setPermissionPage, setPermissionIndex }) => {
 
             <section className='permissions' id='permissions'>
                 {municipalityData?.municipality?.permits?.map(({ title, description }, key) => {
-                    return(
+                    return (
+                        <div>
+
                         <Card
                             title={title}
                             description={description}
                             index={key}
                             onClick={() => handleClick(key)}
                             key={key}
-                        />
+                            />
+                            </div>
                     )
-                    key = key +1;
+                    key = key + 1;
                 }
                 )}
             </section>

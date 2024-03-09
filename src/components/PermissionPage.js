@@ -2,7 +2,7 @@ import React from 'react'
 import { FormPermissionRequest, getMunicipalityData } from './components'
 import { useState, useEffect } from 'react'
 
-const PermissionPage = ({ permissionType, setPermissionPage, permissionIndex }) => {
+const PermissionPage = ({ setPermissionPage, permissionIndex }) => {
   const [municipalityData, setMunicipalityData] = useState(null)
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const PermissionPage = ({ permissionType, setPermissionPage, permissionIndex }) 
         </p>
 
       </section>
-      <FormPermissionRequest permissionType={permissionType} setPermissionPage={setPermissionPage} />
+      <FormPermissionRequest setPermissionPage={setPermissionPage} />
     </div>
   )
 }

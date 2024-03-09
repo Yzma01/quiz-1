@@ -4,7 +4,7 @@ const NavBar = ({ setShowPermissionPage }) => {
     return (
         <div>
             <header className='header'>
-                <a><h2 className='title'>Munp San Francisco</h2></a>
+                <a href='#' onClick={setShowPermissionPage}><h2 className='title'>Munp San Francisco</h2></a>
                 <ul class="nav justify-content-end">
                     <li class="nav-item" >
                         <a
